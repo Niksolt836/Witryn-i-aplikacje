@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Zadanie 11 – JavaScript</title>
+</head>
+<body>
+<div style="color:green; font-size:38px;">
+<script language="JavaScript">
+// Tomasz Białkowski 3R 14.09.2029
+// Zadanie 11 – modyfikacja
+
+var D1_kow = prompt("Podaj pierwszy dzień stycznia (D1):", "");
+var G1_kow = prompt("Podaj godzinę dla pierwszego dnia (G1):", "");
+
+var D2_kow = prompt("Podaj drugi dzień stycznia (D2):", "");
+var G2_kow = prompt("Podaj godzinę dla drugiego dnia (G2):", "");
+
+var d1 = parseInt(D1_kow);
+var g1 = parseInt(G1_kow);
+
+var d2 = parseInt(D2_kow);
+var g2 = parseInt(G2_kow);
+
+// Obliczenie liczby sekund między datami i godzinami
+// Każdy dzień ma 24*60*60 sekund = 86400
+// Każda godzina to 3600 sekund
+var sekundy = ((d2 * 24 + g2) - (d1 * 24 + g1)) * 3600;
+
+document.write("Ilość sekund między dniami " + d1 + " godz. " + g1 +
+               " a " + d2 + " godz. " + g2 + " wynosi: <br><br>" + sekundy + " sekund.<br>");
+
+function okno_zamknij_kow() {
+  window.close();
+}
+</script>
+</div>
+
+<input type="button" value="Zamknij okno" onclick="okno_zamknij_kow()" />
+</body>
+</html>
