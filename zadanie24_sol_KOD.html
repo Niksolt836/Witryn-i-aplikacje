@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>zadanie24-kod</title>
+<body>
+<textarea cols="200" rows="50">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Zadanie</title>
+</head>
+<body>
+
+<script>
+let x1 = parseFloat(prompt("Podaj x1:"));
+let x2 = parseFloat(prompt("Podaj x2:"));
+
+let L = 7;
+
+let exponent = L / (L + 2);
+let y1 = 3 * Math.pow(x1, exponent);
+
+let x1_rad = x1 * Math.PI / 180;
+let y2 = 2 * Math.cos(x1_rad) + 3 * Math.sin(x1_rad);
+
+let y3 = Math.cbrt(
+    Math.pow(x1, 5) +
+    2 * Math.pow(x2, 4) * Math.abs(x1 - x2)
+);
+
+document.write("x1 = " + x1 + "&nbsp"+ "  x2 = " + x2 + "<br>");
+document.write("x1 = " + x1 + "&nbsp"+ "  x1 = " + x1_rad.toFixed(2) + "<br>");
+document.write("y1 = " + y1.toFixed(2) + "<br>");
+document.write("y2 = " + y2.toFixed(2) + "<br>");
+document.write("y3 = " + y3.toFixed(2) + "<br>");
+</script>
+
+</body>
+</html>
+
+</textarea>
+</body>
+</html>

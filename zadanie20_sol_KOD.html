@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>zadanie20-kod</title>
+<body>
+<textarea cols="200" rows="50">
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Trójkąt – obliczanie boków</title>
+
+<script>
+
+function AB_kry(xa_sol, ya_sol, xb_sol, yb_sol) {
+    return Math.sqrt( Math.pow(xa_sol - xb_sol, 2) + Math.pow(ya_sol - yb_sol, 2) );
+}
+
+function BC_kry(xb_sol, yb_sol, xc_sol, yc_sol) {
+    return Math.sqrt( Math.pow(xb_sol - xc_sol, 2) + Math.pow(yb_sol - yc_sol, 2) );
+}
+
+function AC_kry(xa_sol, ya_sol, xc_sol, yc_sol) {
+    return Math.sqrt( Math.pow(xa_sol - xc_sol, 2) + Math.pow(ya_sol - yc_sol, 2) );
+}
+
+function oblicz() {
+
+    var xa_sol = parseFloat(document.getElementById("xa_sol").value);
+    var ya_sol = parseFloat(document.getElementById("ya_sol").value);
+
+    var xb_sol = parseFloat(document.getElementById("xb_sol").value);
+    var yb_sol = parseFloat(document.getElementById("yb_sol").value);
+
+    var xc_sol = parseFloat(document.getElementById("xc_sol").value);
+    var yc_sol = parseFloat(document.getElementById("yc_sol").value);
+
+    var AB = AB_kry(xa_sol, ya_sol, xb_sol, yb_sol);
+    var BC = BC_kry(xb_sol, yb_sol, xc_sol, yc_sol);
+    var AC = AC_kry(xa_sol, ya_sol, xc_sol, yc_sol);
+
+    document.getElementById("wynik").innerHTML =
+        "AB = " + AB.toFixed(3) + "<br>" +
+        "BC = " + BC.toFixed(3) + "<br>" +
+        "AC = " + AC.toFixed(3);
+}
+</script>
+
+</head>
+<body>
+
+<h2>Obliczanie boków trójkąta</h2>
+
+A:
+x = <input type="text" id="xa_sol">
+y = <input type="text" id="ya_sol"><br><br>
+
+B:
+x = <input type="text" id="xb_sol">
+y = <input type="text" id="yb_sol"><br><br>
+
+C:
+x = <input type="text" id="xc_sol">
+y = <input type="text" id="yc_sol"><br><br>
+
+<button onclick="oblicz()">Oblicz długości boków</button>
+
+<h3>Wyniki:</h3>
+<div id="wynik"></div>
+
+</body>
+</html>
+
+</textarea>
+</body>
+</html>

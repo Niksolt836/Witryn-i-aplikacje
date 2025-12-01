@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>zadanie17-kod</title>
+<body>
+<textarea cols="200" rows="50">
+    <!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Teoria JavaScript</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+th {
+    background-color: #e0e0e0;
+}
+
+h2 {
+    margin-top: 35px;
+}
+</style>
+</head>
+<body>
+
+<h1>Odpowiedzi teoretyczne z JavaScript</h1>
+
+<h2>1. Wymień cztery sposoby wyprowadzania danych w JS</h2>
+
+<p><b><u>Odpowiedź:</u></b></p>
+
+<ul>
+    <li><b>document.write()</b> – wypisywanie danych bezpośrednio na stronę,</li>
+    <li><b>alert()</b> – wyświetlanie danych w okienku dialogowym,</li>
+    <li><b>Wpisywanie danych do pól formularza</b> – np. przez <i>value</i>,</li>
+    <li><b>Wprowadzanie danych do tabeli HTML</b> – np. poprzez zmianę <i>innerHTML</i>.</li>
+</ul>
+
+<h2>2. Czym jest funkcja w JS? (4 podpunkty)</h2>
+
+<p><b><u>Odpowiedź:</u></b></p>
+
+<ul>
+    <li><b>Jest to zbiór zgrupowanych instrukcji</b>, które można wykonać poprzez podanie ich nazwy,</li>
+    <li><b>Po wywołaniu funkcji wykonywany jest jej wewnętrzny kod</b>,</li>
+    <li><b>Funkcja może przyjmować argumenty</b>, które są przetwarzane w jej wnętrzu, np. <code>suma(a, b)</code>,</li>
+    <li><b>Może (ale nie musi) zwrócić wartość</b> poprzez użycie słowa kluczowego <code>return</code>.</li>
+</ul>
+
+<h2>3. Omów metody getElementsByName, getElementById, getElementByTagName</h2>
+
+<p><b><u>Odpowiedź:</u></b></p>
+
+<table>
+<tr>
+    <th>Metoda</th>
+    <th>Opis działania</th>
+</tr>
+<tr>
+    <td><b>getElementById("id")</b></td>
+    <td><u>Dostęp do elementu o konkretnej wartości atrybutu id</u>. Zwraca jeden element.</td>
+</tr>
+<tr>
+    <td><b>getElementsByTagName("znacznik")</b></td>
+    <td><u>Dostęp do wszystkich elementów danego typu znacznika</u> (np. p, div). Zwraca kolekcję.</td>
+</tr>
+<tr>
+    <td><b>getElementsByName("nazwa")</b></td>
+    <td><u>Dostęp do elementów o konkretnej wartości atrybutu name</u>. Zwraca kolekcję elementów.</td>
+</tr>
+</table>
+
+<h2>4. Omów właściwości innerHTML, innerText, className</h2>
+
+<p><b><u>Odpowiedź:</u></b></p>
+
+<h3><u>innerHTML</u></h3>
+<p>
+    Umożliwia odczyt, modyfikację, wstawianie lub usuwanie kodu HTML danego elementu.
+    Pozwala zmieniać strukturę strony (np. tabelę, listę).
+</p>
+
+<h3><u>innerText</u></h3>
+<p>
+    Służy do ustawienia lub pobrania „czystego” tekstu w elemencie.
+    Nie interpretuje znaczników HTML.
+</p>
+
+<h3><u>className</u></h3>
+<p>
+    Określa lub zwraca nazwę klasy CSS przypisanej do elementu.
+    Umożliwia dynamiczne zmienianie wyglądu elementów.
+</p>
+
+</body>
+</html>
+</textarea>
+</body>
+</html>

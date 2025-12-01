@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>zadanie23-kod</title>
+<body>
+<textarea cols="200" rows="50">
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Drabina – obliczanie długości i kąta</title>
+
+<script>
+
+function dlugosc_drabiny_sol(D_sol, X_sol) {
+    return Math.sqrt(Math.pow(D_sol, 2) + Math.pow(X_sol, 2));
+}
+
+function kat_drabiny_sol(D_sol, X_sol) {
+    var alfa_rad = Math.atan(D_sol / X_sol);
+    return alfa_rad * 180 / Math.PI;
+}
+
+function oblicz() {
+
+    var D_sol = parseFloat(document.getElementById("D_sol").value);
+    var X_sol = parseFloat(document.getElementById("X_sol").value);
+
+    var drabina = dlugosc_drabiny_sol(D_sol, X_sol);
+    var alfa = kat_drabiny_sol(D_sol, X_sol);
+
+    document.getElementById("drabina_wynik").value = drabina.toFixed(2);
+    document.getElementById("alfa_wynik").value = alfa.toFixed(2);
+}
+
+</script>
+
+</head>
+<body>
+
+<h2>Obliczanie odległości od drabiny i kąta</h2>
+
+Podaj D = 
+<input type="text" id="D_sol">
+&nbsp;&nbsp;
+Podaj X = 
+<input type="text" id="X_sol">
+
+<br><br>
+
+<button onclick="oblicz()">oblicz</button>
+
+<br><br>
+
+Drabina = 
+<input type="text" id="drabina_wynik" readonly> &nbsp;&nbsp;
+Alfa = 
+<input type="text" id="alfa_wynik" readonly>
+
+</body>
+</html>
+
+</textarea>
+</body>
+</html>

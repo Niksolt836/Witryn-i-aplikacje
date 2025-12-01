@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>zadanie22-kod</title>
+<body>
+<textarea cols="200" rows="50">
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Prostokąt – pole i obwód</title>
+
+<script>
+
+function Pole_soltysek(a_sol, b_sol) {
+    return a_sol * b_sol;
+}
+
+function obwod_soltysek(a_sol, b_sol) {
+    return 2 * (a_sol + b_sol);
+}
+
+function oblicz() {
+
+    var a_sol = parseFloat(document.getElementById("a_dana_sol").value);
+    var b_sol = parseFloat(document.getElementById("b_dana_sol").value);
+
+    var pole = Pole_soltysek(a_sol, b_sol);
+    var obw = obwod_soltysek(a_sol, b_sol);
+
+    document.getElementById("pole").value = pole;
+    document.getElementById("obw").value = obw;
+}
+
+</script>
+
+</head>
+<body>
+
+<label>Długość a:</label>
+<input type="text" id="a_dana_sol"><br><br>
+
+<label>Długość b:</label>
+<input type="text" id="b_dana_sol"><br><br>
+
+<label>Pole:</label>
+<input type="text" id="pole" readonly><br><br>
+
+<label>Obwód:</label>
+<input type="text" id="obw" readonly><br><br>
+
+<button onclick="oblicz()">Oblicz</button>
+
+</body>
+</html>
+
+</textarea>
+</body>
+</html>

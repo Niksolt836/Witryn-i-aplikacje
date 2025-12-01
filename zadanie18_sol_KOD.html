@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>zadanie18-kod</title>
+<body>
+<textarea cols="200" rows="50">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Użycie funkcji</title>
+<meta charset="utf-8">
+</head>
+<body>
+<script language="JavaScript">
+
+var a = parseFloat(prompt("a=", ""));
+var b = parseFloat(prompt("b=", ""));
+
+function suma_sol(a, b) {
+    return a + b;
+}
+
+function odejmowanie_sol(a, b) {
+    return a - b;
+}
+
+function mnozenie_sol(a, b) {
+    return a * b;
+} 
+
+function od_kwadratu_sol(a, b) {
+    document.write(a + "^2 = " + (a * a) + "<br>");
+    document.write(b + "^2 = " + (b * b) + "<br>");
+}
+
+function reszta_z_dzielenia_a_przez_b_sol(a, b) {
+    return a % b;
+}
+
+document.write("suma = " + suma_sol(a, b) + "<br>");
+document.write("różnica = " + odejmowanie_sol(a, b) + "<br>");
+document.write("iloczyn = " + mnozenie_sol(a, b) + "<br><br>");
+
+document.write("<b>Kwadraty liczb:</b><br>");
+od_kwadratu_sol(a, b);
+document.write("<br>");
+
+document.write("reszta z dzielenia a przez b = " + reszta_z_dzielenia_a_przez_b_sol(a, b) + "<br>");
+
+</script>
+</body>
+</html>
+</textarea>
+</body>
+</html>
