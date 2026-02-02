@@ -1,0 +1,31 @@
+<html> 
+     <head> 
+           <script type="text/javascript"> 
+           var monitor = { 
+   marka: 'Dell', 
+   rozdzielczość: '1920x1080', 
+   rozmiar: '24 cale', 
+   pokaz: function () 
+     { 
+        document.write(this.marka + ' ' + this.rozdzielczość) 
+     } 
+  } 
+  monitor.pokaz(); 
+  monitor.częstotliwość=60; 
+  monitor.wypisz=function() {alert('częstotliwość odświeżania: ' + this.częstotliwość + 'Hz')} 
+  monitor.wypisz(); 
+            </script> 
+     </head> 
+<body> 
+ <br> 
+   Programowanie obiektowe. <br> 
+     Obiekt  to  monitor<br> 
+     Pola:<br> 
+     Marka<br> 
+     rozdzielczość<br> 
+     rozmiar<br> 
+     metoda:  pokaz<br> 
+     nowe pole to częstotliwość <br> 
+     nowa metoda to wypisz();<br> 
+</body> 
+</html>
