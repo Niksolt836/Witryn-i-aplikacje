@@ -1,0 +1,38 @@
+<head>
+    <meta charset="UTF-8">
+    <META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=iso-8859-2">
+    </head>
+<body>
+    <h1>Kod html</h1>
+    <textarea rows="20" cols="200">
+      <html> 
+     <head> 
+           <script type="text/javascript"> 
+              function monitor(marka_k,rozdzielczość_k,rozmiar_k)//początek konstruktora 
+  { 
+   this.marka=marka_k; 
+   this.rozdzielczość=rozdzielczość_k; 
+   this.rozmiar=rozmiar_k;   
+  }//koniec konstruktora 
+              monitor.prototype.wypisz = function () //definicja metody 
+      { 
+         alert(this.marka + ' ' + this.rozdzielczość+ ' ' + this.rozmiar); 
+      }; 
+  var monitor1 = new monitor("Dell", "1920x1080", "24 cale"); // nowy obiekt osoba1 
+  var monitor2 = new monitor('Lenovo', '1920x1080', '27 cale'); 
+  monitor1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1 
+  monitor2.wypisz(); 
+                document.write("dostęp do właściwości"+"<br>"); 
+// poniżej dostęp do pól osoby1 
+    document.write("monitor Pierwszy"+"   "+monitor1.marka+"   "+monitor1.rozdzielczość+"   "+monitor1.rozmiar+"<br>"); 
+   document.write("monitor Drugi"+"   "+monitor2.marka+"   "+monitor2.rozdzielczość+"   "+monitor2.rozmiar); 
+            </script> 
+     </head> 
+<body> 
+ <br> 
+   programowanie obiektowe   
+</body> 
+</html>
+    </textarea>
+</body>
+</html>
