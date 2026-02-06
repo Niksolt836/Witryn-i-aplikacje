@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Programowanie obiektowe JS</title>
+</head>
+<body>
+
+<h1>1. W jaki sposób można określić właściwość obiektu?</h1>
+<h2>
+Sposób 1 – notacja kropkowa:
+<br>obiekt.imie = "Jan";
+
+<br><br>Sposób 2 – notacja tablicowa:
+<br>obiekt["imie"] = "Jan";
+</h2>
+
+<h1>2. Jak odwołujemy się do pól i metod?</h1>
+<h2>
+Pole:
+<br>obiekt.wiek;
+
+<br><br>Metoda:
+<br>obiekt.przywitaj();
+</h2>
+
+<h1>3. Cechy charakterystyczne konstruktora</h1>
+<h2>
+<ul>
+<li>Jest wywoływany podczas tworzenia obiektu</li>
+<li>Ustawia wartości początkowe</li>
+<li>Ma nazwę klasy (lub funkcji konstruktora)</li>
+<li>Używa słowa this</li>
+</ul>
+</h2>
+
+<h1>4. Obiekt z trzema polami i jedną metodą</h1>
+<h2>
+let osoba = {
+imie: "Anna",
+wiek: 20,
+miasto: "Warszawa",
+przedstawSie: function() {
+alert("Jestem Anna");
+}
+};
+</h2>
+
+<h1>5. Znaczenie słowa this</h1>
+<h2>
+this oznacza aktualny obiekt.
+
+<br><br>Oddzielamy pola i metody kropką:
+<br>this.imie  
+<br>this.przedstawSie()
+</h2>
+
+<h1>6. Konstruktor w JavaScript</h1>
+<h2>
+function Osoba(imie, wiek) {
+this.imie = imie;
+this.wiek = wiek;
+}
+
+<br><br>Opis: Konstruktor tworzy nowe obiekty i przypisuje im dane.
+</h2>
+
+<h1>7. Słowo kluczowe new</h1>
+<h2>
+let osoba1 = new Osoba("Jan", 30);
+
+<br><br>new tworzy nowy obiekt na podstawie konstruktora.
+</h2>
+
+<h1>8. Słowo kluczowe prototype</h1>
+<h2>
+Osoba.prototype.przywitaj = function() {
+alert("Cześć!");
+};
+
+<br><br>
+<b>Prototype pozwala dodawać metody do wszystkich obiektów danej klasy bez kopiowania ich w każdym obiekcie.</b>
+<br>Dzięki temu oszczędzamy pamięć i kod jest wydajniejszy.
+</h2>
+
+</body>
+</html>
