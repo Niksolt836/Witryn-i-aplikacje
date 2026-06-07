@@ -1,0 +1,40 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=iso-8859-2">
+    </head>
+<body>
+    <h1>Kod html</h1>
+    <textarea rows="20" cols="200">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Liczby parzyste</title>
+</head>
+<body>
+
+<h2>Liczby parzyste od 2 do podanej liczby</h2>
+<div id="wynik"></div>
+
+<script>
+    let i_s;
+    let koniec_petli_sol;
+
+    i_s = prompt("Podaj liczbę końcową:");
+    koniec_petli_sol = parseInt(i_s);
+
+    let wynik = "";
+
+    for (let i = 2; i <= koniec_petli_sol; i += 2) {
+        wynik += i + "<br>";
+    }
+
+    document.getElementById("wynik").innerHTML = wynik;
+</script>
+
+</body>
+</html>  
+</textarea>
+</body>
+</html>

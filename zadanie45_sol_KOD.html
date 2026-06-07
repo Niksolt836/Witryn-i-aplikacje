@@ -1,0 +1,49 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=iso-8859-2">
+    </head>
+<body>
+    <h1>Kod html</h1>
+    <textarea rows="20" cols="200">
+  <!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie JavaScript</title>
+</head>
+<body>
+
+<div id="wynik"></div>
+
+<script>
+    let liczba_sol;
+    let koniec_petli_sol = 10;
+    let wielkosc_liter_sol = 42;
+    let wynik = "";
+
+    liczba_sol = parseInt(prompt("Podaj liczbę:"));
+
+    wynik += "ilość wykonania pętli = " + koniec_petli_sol + "<br>";
+    wynik += "wielkość liter = " + wielkosc_liter_sol + "px<br><br>";
+
+    if (liczba_sol % 2 == 0) {
+        for (let i_sol = 1; i_sol <= koniec_petli_sol; i_sol++) {
+            wynik += "<span style='color:blue; font-size:" +
+                     wielkosc_liter_sol + "px;'>Sołtysek</span><br>";
+        }
+    } else {
+        for (let i_sol = 1; i_sol <= koniec_petli_sol; i_sol++) {
+            wynik += "<span style='color:green; font-size:" +
+                     wielkosc_liter_sol + "px;'>Nikodem</span><br>";
+        }
+    }
+
+    document.getElementById("wynik").innerHTML = wynik;
+</script>
+
+</body>
+</html>      
+</textarea>
+</body>
+</html>
