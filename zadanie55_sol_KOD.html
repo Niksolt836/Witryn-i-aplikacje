@@ -1,0 +1,79 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=iso-8859-2">
+    </head>
+<body>
+    <h1>Kod html</h1>
+    <textarea rows="20" cols="200">
+        <!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zmiana wielkości tekstu</title>
+</head>
+<body>
+
+<script>
+
+var l1_t_sol;
+var l2_t_sol;
+
+do {
+    l1_t_sol = parseInt(prompt("Podaj liczbę l1 (20–60):"));
+
+    if (l1_t_sol < 20 || l1_t_sol > 60) {
+        alert("liczba l1 nie należy do przedziału <20,60>");
+    }
+
+} while (l1_t_sol < 20 || l1_t_sol > 60);
+
+
+do {
+    l2_t_sol = parseInt(prompt("Podaj liczbę l2 (20–60):"));
+
+    if (l2_t_sol < 20 || l2_t_sol > 60) {
+        alert("liczba l2 nie należy do przedziału <20,60>");
+    }
+
+} while (l2_t_sol < 20 || l2_t_sol > 60);
+
+
+var pocz_kow = parseInt(prompt("Podaj początkową wielkość tekstu:"));
+var tekst_sol = prompt("Podaj tekst:");
+
+
+var i_sol = pocz_kow;
+
+
+if (l1_t_sol == l2_t_sol) {
+
+    document.write("<p style='font-size:" + i_sol + "px; color:black;'>" + tekst_sol + "</p>");
+
+}
+else if (l1_t_sol < l2_t_sol) {
+
+    for (; i_sol <= 100; i_sol = i_sol + 5) {
+
+        document.write("<p style='font-size:" + i_sol + "px; color:black;'>" + tekst_sol + "</p>");
+
+    }
+
+}
+else if (l2_t_sol < l1_t_sol) {
+
+    for (; i_sol >= 0; i_sol = i_sol - 5) {
+
+        document.write("<p style='font-size:" + i_sol + "px; color:black;'>" + tekst_sol + "</p>");
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
+</textarea>
+</body>
+</html>

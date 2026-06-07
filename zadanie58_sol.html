@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Liczby nieparzyste</title>
+</head>
+<body>
+
+<script>
+
+var l1_sol = parseInt(prompt("Podaj pierwszą liczbę:"));
+var l2_sol = parseInt(prompt("Podaj drugą liczbę:"));
+
+if (l1_sol == l2_sol)
+{
+    confirm("Liczby są równe - brak obliczeń");
+}
+else if (l1_sol < l2_sol)
+{
+    for (var i_sol = l1_sol; i_sol <= l2_sol; i_sol++)
+    {
+        if (i_sol % 2 != 0)
+        {
+            document.write("<span style='color:green; font-size:20px;'>" + i_sol + "</span><br>");
+        }
+    }
+}
+else
+{
+    for (var i_sol = l1_sol; i_sol >= l2_sol; i_sol--)
+    {
+        if (i_sol % 2 != 0)
+        {
+            document.write("<span style='color:blue; font-size:10px;'>" + i_sol + "</span><br>");
+        }
+    }
+}
+
+</script>
+
+</body>
+</html>

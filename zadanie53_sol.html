@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Prostokąt z gwiazdek</title>
+</head>
+<body>
+
+<script>
+
+var a_sol = parseInt(prompt("Podaj wysokość a="));
+var b_sol = parseInt(prompt("Podaj szerokość b="));
+
+for (var i_sol = 1; i_sol <= b_sol; i_sol++)
+{
+    document.write("*");
+}
+document.write("<br>");
+
+var wiersz_sol = "*";
+
+for (var i_sol = 1; i_sol <= (b_sol - 2); i_sol++)
+{
+    wiersz_sol = wiersz_sol + "&nbsp;&nbsp;";
+}
+
+wiersz_sol = wiersz_sol + "*";
+
+for (var i_sol = 1; i_sol <= (a_sol - 2); i_sol++)
+{
+    document.write(wiersz_sol);
+    document.write("<br>");
+}
+
+for (var i_sol = 1; i_sol <= b_sol; i_sol++)
+{
+    document.write("*");
+}
+
+</script>
+
+</body>
+</html>

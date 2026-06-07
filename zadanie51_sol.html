@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Modyfikacja pętli</title>
+</head>
+<body>
+
+<script>
+
+var ile_razy_sol = parseInt(prompt("Ile razy powtórzyć="));
+var inicjaly_sol = prompt("Podaj twoje inicjały=");
+
+for (var i_sol = 1; i_sol <= ile_razy_sol; i_sol++)
+{
+    for (var k_sol = 1; k_sol <= i_sol; k_sol++)
+    {
+        document.write("&nbsp;&nbsp;&nbsp;");
+    }
+
+    document.write(i_sol + "_" + inicjaly_sol + "_" + i_sol + "<br>");
+}
+
+</script>
+
+</body>
+</html>

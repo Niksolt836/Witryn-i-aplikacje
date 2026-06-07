@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Pierwiastki</title>
+</head>
+<body>
+
+<script>
+
+var licznik_sol = 0;
+
+for (var i_sol = 25; i_sol <= 25 + 15; i_sol++)
+{
+    var pierw2_sol = Math.sqrt(i_sol);
+    var pierw4_sol = Math.sqrt(pierw2_sol);
+
+    document.write(
+        "I=" + i_sol +
+        " pierw_2=" + pierw2_sol.toFixed(2) +
+        " pierw_4=" + pierw4_sol.toFixed(2) +
+        "<br>"
+    );
+
+    licznik_sol++;
+
+    if (licznik_sol % 3 == 0)
+    {
+        alert("Zatrzymanie ekranu - kliknij OK aby kontynuować");
+    }
+}
+
+</script>
+
+</body>
+</html>

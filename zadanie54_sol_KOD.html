@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=iso-8859-2">
+    </head>
+<body>
+    <h1>Kod html</h1>
+    <textarea rows="20" cols="200">
+   <!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Prostokąt z gwiazdek</title>
+</head>
+<body>
+
+<script>
+
+var imie_sol = prompt("Podaj imię:");
+var nazwisko_sol = prompt("Podaj nazwisko:");
+
+var a_sol = (nazwisko_sol.length % 4) + 5;
+var b_sol = (imie_sol.length % 6) + 20;
+
+for (var i_sol = 1; i_sol <= b_sol; i_sol++)
+{
+    document.write("*");
+}
+document.write("<br>");
+
+for (var i_sol = 1; i_sol <= a_sol - 2; i_sol++)
+{
+    document.write("*");
+
+    for (var j_sol = 1; j_sol <= b_sol - 2; j_sol++)
+    {
+        document.write("&nbsp;&nbsp;");
+    }
+
+    document.write("*<br>");
+}
+
+for (var i_sol = 1; i_sol <= b_sol; i_sol++)
+{
+    document.write("*");
+}
+
+</script>
+
+</body>
+</html>     
+</textarea>
+</body>
+</html>

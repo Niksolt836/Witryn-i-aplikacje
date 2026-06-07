@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=iso-8859-2">
+    </head>
+<body>
+    <h1>Kod html</h1>
+    <textarea rows="20" cols="200">
+        <!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Liczby pierwsze</title>
+</head>
+<body>
+
+<script>
+
+var licznik_sol = 0;
+
+for (var i_sol = 0; i_sol < 40; i_sol++)
+{
+    var w_sol = i_sol * i_sol + i_sol + 41;
+
+    document.write("i=" + i_sol + " w(" + i_sol + ")=" + w_sol + "<br>");
+
+    licznik_sol++;
+
+    if (licznik_sol % 5 == 0)
+    {
+        prompt("Naciśnij OK aby kontynuować");
+    }
+}
+
+</script>
+
+</body>
+</html>
+</textarea>
+</body>
+</html>
